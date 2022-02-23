@@ -6,7 +6,7 @@ public class NumeroInvertido {
 		
 		int num, unidade, dezena, centena, nInvertido;
 		
-		System.out.println("Insira o número com 3 digitos que deseja inverter:");
+		System.out.println("Insira o nÃºmero com 3 digitos que deseja inverter:");
 		num=in.nextInt();
 		
 		unidade=num/100;
@@ -15,9 +15,12 @@ public class NumeroInvertido {
 		
 		nInvertido=unidade+dezena+centena;
 
-		System.out.println("O número invertido é: "+nInvertido);
-		
-		in.close();
+		if(nInvertido<100){
+			System.out.println("O nÃºmero invertido Ã© 0"+nInvertido);
+		}
+		else{
+			System.out.println("O nÃºmero invertido Ã© "+nInvertido);
+		}
 	}
 
 }
